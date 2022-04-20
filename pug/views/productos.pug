@@ -1,0 +1,21 @@
+html 
+    head 
+        title ='Lista de productos'
+
+    body 
+        nav
+            ul 
+                a(href='http://localhost:8080/productos') Productos
+                
+                a(href='http://localhost:8080/form') Formulario
+        table
+            tr  
+                th='Producto'
+                th='Precio'
+                th='Link'
+             
+                each producto in productos 
+                    tr
+                        td= producto.nombre 
+                        td=producto.precio 
+                        td= producto.url 

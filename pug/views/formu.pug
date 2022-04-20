@@ -1,0 +1,19 @@
+html
+    nav
+        ul 
+            a(href='http://localhost:8080/productos') Productos
+
+            a(href='http://localhost:8080/form') Formulario 
+
+    head
+        h1='Ingreso del producto'
+    body 
+      
+        form(action="/producto" method="POST")
+            h3='Nombre del producto'
+                input(type="text" ,name="nombre" id="nombre")
+            h3='Precio'
+                input(type="number" ,name="precio" id="precio")
+            h3='Link'
+                input(type="text" ,name="url" id="url")
+                button(type="submit" ) 'Listo'

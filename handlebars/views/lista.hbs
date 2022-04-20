@@ -1,0 +1,21 @@
+{{>navbar}}
+<h2>Lista de productos</h2>
+<table>
+<tr>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Link</th>
+</tr>
+{{#if listExists}}
+
+    {{#each productos}}
+    <tr>   
+         <td>{{this.nombre}}</td>
+         <td>{{this.precio}}</td>
+         <td> {{this.url}}</td> 
+    </tr>
+    {{/each}}
+  
+    {{/if}}
+   
+ </table>
