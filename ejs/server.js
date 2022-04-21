@@ -60,8 +60,8 @@ editById(id,obj){
 }
 
 let conten = new contenedor('./productos.json');
-conten.save({"nombre": 'heladera' ,"precio": 123 ,"url": 'url1'});
-conten.save({"nombre": 'Microondas' ,"precio": 443 ,"url": 'url2'});
+conten.save({"nombre": 'heladera' ,"precio": 123 ,"url": 'https://cdn3.iconfinder.com/data/icons/solid-amenities-icon-set/64/Refrigerator_2-128.png'});
+conten.save({"nombre": 'Microondas' ,"precio": 443 ,"url": 'https://cdn2.iconfinder.com/data/icons/cooking-56/64/16-kitchenware-microwave_oven-electronics-microwave-heating-cooking-128.png'});
 conten.save({"nombre": 'Cafetera' ,"precio": 1616 ,"url": 'url3'});
 conten.save({"nombre": 'Arrocera' ,"precio": 2204 ,"url": 'url4'});
 

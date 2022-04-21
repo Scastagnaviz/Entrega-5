@@ -19,5 +19,7 @@ html
                 each producto in productos 
                     tr
                         td= producto.nombre 
-                        td=producto.precio 
-                        td= producto.url 
+                        td=producto.precio
+                        td  
+                            img(src=producto.url)
+                        
