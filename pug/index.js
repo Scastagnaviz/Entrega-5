@@ -4,6 +4,8 @@ const fs = require('fs');
 const  PORT = 8080;
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({extended:true}))
 app.set('view engine','pug');
 app.set('views','./views');
 app.use(express.static("public"));
@@ -73,16 +75,10 @@ app.get('/form',function(req,res){
     res.render('formu.pug');
 })
 
-app.post('/productos',(req,res)=>{
-    let obj= req.b
-    ody;
-   // conten.save(obj);
-    console.log(req.body);
-    res.json({ 
-        result : 'Producto guardado',
-        body:req.body,
-});
-});
+app.post('/productos',function(req,res){
+    conten.save(req.body);
+    res.redirect('/productos');
+})
 
 const server  = app.listen(PORT, () =>  {
     console.log( `Servidor Http escuchando  en el puerto ${PORT}`);

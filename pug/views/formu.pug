@@ -1,15 +1,16 @@
 html
-    nav
+   
+
+    head
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'  integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous')
+        h1='Ingreso del producto'
+    body 
+       nav
         ul 
             a(href='http://localhost:8080/productos') Productos
 
             a(href='http://localhost:8080/form') Formulario 
-
-    head
-        h1='Ingreso del producto'
-    body 
-      
-        form(action="/producto" method="POST")
+        form(action="/productos" method="POST")
             h3='Nombre del producto'
                 input(type="text" ,name="nombre" id="nombre")
             h3='Precio'

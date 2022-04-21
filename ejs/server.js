@@ -78,6 +78,10 @@ app.get('/productos',function(req,res){
 app.get('/form',function(req,res){
     res.render('pages/form');
 })
+app.post('/productos',function(req,res){
+    conten.save(req.body);
+    res.redirect('/productos');
+})
 
 const server  = app.listen(PORT, () =>  {
     console.log( `Servidor Http escuchando  en el puerto ${PORT}`);
